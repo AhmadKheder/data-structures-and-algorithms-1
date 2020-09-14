@@ -7,16 +7,16 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
-    insert(value) {
-        let newNode = new Node(value);
+    insert(val) {
+        let newNode = new Node(val);
         newNode.next = this.head;
         this.head = newNode;
         return this;
     }
-    includes(value) {
+    includes(val) {
         let newNode = this.head;
         while (newNode) {
-            if (newNode.value === value) {
+            if (newNode.val === val) {
                 return true
             } else {
                 newNode = newNode.next;
@@ -29,7 +29,7 @@ class LinkedList {
         let result = '';
         let newNode = this.head;
         while (newNode) {
-            result += `{ ${newNode.value} } -> `
+            result += `{ ${newNode.val} } -> `
             newNode = newNode.next;
         }
         return (result + 'NULL')
@@ -68,7 +68,6 @@ class LinkedList {
             let currVal = this.head;
 
             while (currVal) {
-                // console.log('we in while');
                 if (currVal.next.val === val) {
                     newNode.next = currVal.next;
                     currVal.next = newNode;

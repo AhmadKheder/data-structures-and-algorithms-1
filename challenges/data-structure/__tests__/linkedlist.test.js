@@ -13,13 +13,13 @@ describe('Linked List Module', () => {
         expect(list.head).toBeNull();
         let initialValue = 'First One';
         list.insert(initialValue);
-        expect(list.head.value).toEqual(initialValue);
+        expect(list.head.val).toEqual(initialValue);
 
         let newValue = 'Second Value';
         list.insert(newValue);
-        expect(list.head.value).toEqual(newValue);
+        expect(list.head.val).toEqual(newValue);
         expect(list.head.next).not.toBeNull();
-        expect(list.head.next.value).toEqual(initialValue);
+        expect(list.head.next.val).toEqual(initialValue);
 
     });
     it('includes()', () => {
@@ -76,7 +76,7 @@ describe('Challenge 6: expected pass tests', () => {
       newList.insert('C');
       newList.insert('D');
       newList.insertBefore('C', 'BtoC');
-      expect(newList.toString()).toEqual('{ D } -> { C } -> { BtoC } -> { B } -> { A } -> NULL');
+      expect(newList.toString()).toEqual('{ D } -> { BtoC } -> { C } -> { B } -> { A } -> NULL');
     });
 
     it('4. Can successfully insert a node before the first node of a linked list', () => {
@@ -87,7 +87,7 @@ describe('Challenge 6: expected pass tests', () => {
       newList.insert('C');
       newList.insert('D');
   
-      expect(newList.toString()).toBe(console.log('[D], [C], [B], [A]'));
+      expect(newList.toString()).toEqual('{ D } -> { C } -> { B } -> { A } -> NULL');
     });
 
     it('5. Can successfully insert after a node in the middle of the linked list', () => {
@@ -97,9 +97,9 @@ describe('Challenge 6: expected pass tests', () => {
       newList.insert('B');
       newList.insert('C');
       newList.insert('D');
-      newList.insertAfter('B', 'BtoC');
-  
-      expect(newList.toString()).toBe(console.log('[D], [C], [BtoC], [B], [A]'));
+      newList.insertAfter('B', 'BtoA');
+      
+      expect(newList.toString()).toEqual('{ D } -> { C } -> { B } -> { BtoA } -> { A } -> NULL');
     });
 
     it('6. Can successfully insert a node after the last node of the linked list', () => {
@@ -109,7 +109,6 @@ describe('Challenge 6: expected pass tests', () => {
       newList.insert('B');
       newList.insert('C');
       newList.append('D');
-  
-      expect(newList.toString()).toBe(console.log('[C], [B], [A], [D]'));
+      expect(newList.toString()).toEqual('{ C } -> { B } -> { A } -> { D } -> NULL');
     });
 });
