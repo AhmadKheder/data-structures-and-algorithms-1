@@ -16,6 +16,6 @@ O(n)
 ## Solution
 
 Code Challenge: Class 06
-![](./assets/class-06-1.PNG)
-![](./assets/class-06-2.PNG)
-![](./assets/class-06-3.PNG)
+![class-06-1](./assets/class-06-1.PNG)
+![class-06-2](./assets/class-06-2.PNG)
+![class-06-3](./assets/class-06-3.PNG)
