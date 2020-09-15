@@ -112,6 +112,22 @@ class LinkedList {
       throw err;
     }
   }
+  kthFromEnd(k){
+    let currNode = this.head;
+    let counter = 0;
+
+    while (currNode) {
+      counter++;
+      currNode = currNode.next;
+    }
+    currNode = this.head;
+    k = counter - k;
+    for (let index = 0; index < k ; index++) {
+      currNode = currNode.next ;
+    }
+    return currNode.val;
+  }
+
 }
 
 
