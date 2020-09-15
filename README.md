@@ -1,3 +1,4 @@
 # data-structures-and-algorithms
+[arrayBinarySearch](./challenges/arrayBinarySearch)
 
-[linked-list](https://github.com/osama-hanoun-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/data-structure/linked-list)
+[linked-list](./challenges/data-structure/linked-list)
