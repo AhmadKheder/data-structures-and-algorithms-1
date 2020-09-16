@@ -127,7 +127,6 @@ class LinkedList {
     }
     return currNode.val;
   }
-
 }
 
 
