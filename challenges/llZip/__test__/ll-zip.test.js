@@ -1,7 +1,7 @@
 const LinkedList  = require('../../data-structure/linked-list/linkedlist');
 const zipLists  = require('../ll-zip');
 
-describe.skip('zip two lists together function', () => {
+describe('zip two lists together function', () => {
     it('should zip Linked Lists together when the list lengths are equal', () => {
   
       const list1 = new LinkedList();
@@ -36,7 +36,7 @@ describe.skip('zip two lists together function', () => {
     
       const zipped = zipLists(list1, list2);
     
-      expect(zipped.toString()).toBe('{ 1 } -> { 5 } ->{ 3 } -> { 9 } -> { 2 } -> { 4 } -> { 12 } -> NULL');
+      expect(zipped.toString()).toBe('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> { 12 } -> NULL');
     
     });
     
@@ -59,7 +59,7 @@ describe.skip('zip two lists together function', () => {
     
       const zipped = zipLists(list1, list2);
     
-      expect(zipped.toString()).toBe('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> { 12} -> { 15} -> NULL');
+      expect(zipped.toString()).toBe('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> { 12 } -> { 15 } -> NULL');
     
     });
     
