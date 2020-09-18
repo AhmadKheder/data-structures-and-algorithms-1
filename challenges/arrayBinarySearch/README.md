@@ -9,4 +9,5 @@ O(log n)
 
 ## Solution
 
-![class-03](./assets/class-03.PNG)
+
+![class-03](https://raw.githubusercontent.com/osama-hanoun-401-advanced-javascript/data-structures-and-algorithms/array-binary-search/assets/class-03.PNG)
