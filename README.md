@@ -1,4 +1,4 @@
 # data-structures-and-algorithms
 [arrayBinarySearch](./challenges/arrayBinarySearch)
-
-[linked-list](./challenges/data-structure/linked-list)
+[Linked-List](./challenges/data-structure/linked-list)
+[Stacks and Queues](./challenges/data-structure/stacksAndQueues)
