@@ -9,5 +9,4 @@ O(log n)
 
 ## Solution
 
-![class-04](https://raw.githubusercontent.com/osama-hanoun-401-advanced-javascript/data-structures-and-algorithms/linked-list/assets/class-04.PNG)
-
+![class-03](./assets/class-03.PNG)

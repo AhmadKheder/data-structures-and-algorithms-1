@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
 
 
-function search (arr,num){
+function binarySearch (arr,num){
   let st =0;
+  console.log('arr?>??????????',arr);
   let ed = arr.length-1;
   let md = Math.ceil(arr.length/2);
   let key =true;
@@ -27,4 +28,4 @@ function search (arr,num){
 
 }
 
-module.exports = search();
+module.exports = binarySearch;
